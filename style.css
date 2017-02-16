@@ -131,7 +131,7 @@
   @media (max-width: 1100px) and (min-width: 901px) {
       .container {
           width: 60%;
-          margin: 0 15%;
+          margin: 0 20%;
           margin-top: 50px;
           height: auto;
       }
