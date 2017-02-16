@@ -8,9 +8,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Duy Nguyen Hoang profile</title>
-  <link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
-  <link rel='stylesheet prefetch' href='//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
-  <link rel="stylesheet" href='style.css'>
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet prefetch" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
@@ -24,6 +25,40 @@
       <p>Full stack developer</p>
 
       <div class="row">
+      <div style="text-align: left">
+        <pre>
+          <code class="language-js">
+  import React from 'react';
+
+  class Skills extends React.Component {
+    render() {
+      let { skills } = this.props;
+      return (skills && &lt;ul&gt; { skills.map(skill => {
+          return &lt;li&gt;{skill}&lt;/li&gt;
+        })
+      } &lt;/ul&gt;);
+    }
+  } </code>
+        </pre>
+
+        <pre>
+          <code class="language-js">
+  const skills = [
+    'PHP (Laravel, Symfony, Yii...)',
+    'Java (Spring Boot)',
+    'Mysql, Redis, ElasticSearch, Neo4j',
+    'RabbitMQ',
+    'Nodejs (Express)',
+    'Python (Django)',
+    'Reactjs, Redux, Rxjs',
+  ];
+
+  ReactDOM.render(
+    &lt;Skills skills={skills} /&gt;,
+    document.getElementById('root')
+  );      </code>
+        </pre>
+      </div>
       <div class="col-md-12 text-center ">
         <p>Find me @</p>
         <ul class="list-inline social-links">
@@ -39,6 +74,10 @@
   </div>
     </div>
 </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/languages/javascript.min.js"></script>
+
+
 </body>
 </html>
 
