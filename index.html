@@ -28,38 +28,42 @@
       <div style="text-align: left">
         <pre>
           <code class="language-js">
-  import React from 'react';
+import React from 'react';
 
-  class Skills extends React.Component {
-    render() {
-      let { skills } = this.props;
-      return (skills && &lt;ul&gt; { skills.map(skill => {
-          return &lt;li&gt;{skill}&lt;/li&gt;
-        })
-      } &lt;/ul&gt;);
-    }
-  } </code>
+class Skills extends React.Component {
+  render() {
+    let { skills } = this.props;
+    return (skills && &lt;ul&gt; { skills.map(skill => {
+        return &lt;li&gt;{skill}&lt;/li&gt;
+      })
+    } &lt;/ul&gt;);
+  }
+} </code>
         </pre>
 
         <pre>
           <code class="language-js">
-  const skills = [
-    'PHP (Laravel, Symfony, Yii...)',
-    'Java (Spring Boot)',
-    'Mysql, Redis, ElasticSearch, Neo4j',
-    'RabbitMQ',
-    'Nodejs (Express)',
-    'Python (Django)',
-    'Reactjs, Redux, Rxjs',
-  ];
+const skills = [
+  'PHP (Laravel, Symfony, Yii...)',
+  'Java (Spring Boot)',
+  'Nodejs (Express)',
+  'Python (Django)',
+  'Golang (gorilla, gocraft)',
+  'Mysql, Redis, ElasticSearch, Neo4j',
+  'RabbitMQ',
+  'Javascript, React Native, Reactjs, Redux, Rxjs',
+  'AWS, Terraform, Jenkins, Puppet',
+  'Automation Test (Cucumber, Robot Framework)',
+  'Android development',
+];
 
-  ReactDOM.render(
-    &lt;Skills skills={skills} /&gt;,
-    document.getElementById('root')
-  );      </code>
+ReactDOM.render(
+  &lt;Skills skills={skills} /&gt;,
+  document.getElementById('root')
+);      </code>
         </pre>
       </div>
-      <div class="col-md-12 text-center ">
+      <div class="col-md-12 text-center">
         <p>Find me @</p>
         <ul class="list-inline social-links">
           <li><a target="_blank" href="https://github.com/duynguyenhoang" class="btn-social btn-outline" data-toggle="tooltip" data-placement="top" title="Github"><i class="icon ion-social-github"></i></a>
