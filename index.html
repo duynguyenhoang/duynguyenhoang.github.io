@@ -18,14 +18,8 @@
 <body>
   <div class="container">
     <div class="profile">
-      <div class="pic">
-        <div class="img"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAV3AAAAJDFiYmU4ODgzLTQ3ZjItNDgzMS1iY2Y3LTViOWM3MDIwNjUyZA.jpg"/></div>
-        <i class="icon-plus"></i>
-        <i class="icon-ok"></i>
-      </div>
       <h3>Duy Nguyen Hoang</h3>
-      <p>Full Stack Developer</p>
-
+      <p>Big Data Engineer/ Full Stack Developer</p>
       <div class="row">
       <div style="text-align: left">
         <pre>
@@ -36,7 +30,7 @@ class Skills extends React.Component {
   render() {
     let { skills } = this.props;
     return (skills && &lt;ul&gt; { skills.map(skill => {
-        return &lt;li&gt;{skill}&lt;/li&gt;
+        return &lt;li key={skill}&gt;{skill}&lt;/li&gt;
       })
     } &lt;/ul&gt;);
   }
@@ -46,17 +40,22 @@ class Skills extends React.Component {
         <pre>
           <code class="language-js">
 const skills = [
+  'Big Data (Hadoop ecosystem) Architecture',
+  'Apache Spark, Hive, Kafka, Sqoop, Hbase, Phoenix, Ignite, Alluxio, Presto, Airflow, ...',
   'PHP (Laravel, Symfony, Yii...)',
   'Java (Spring Boot)',
   'Nodejs (Express)',
   'Python (Django)',
   'Golang (gorilla, gocraft, beego)',
-  'Mysql, Redis, Memcache, ElasticSearch, Neo4j',
+  'Mysql, Redis, Memcache, ElasticSearch, Neo4j, MongoDB',
   'RabbitMQ',
   'Javascript (Reactjs, Vuejs, React Native, Redux, Rxjs),
-  'AWS, Terraform, Jenkins, Puppet',
+  'AWS (DynamoDB, Kinesis, S3, EC2, EMR, ...)',
+  'Terraform, Jenkins, Puppet',
   'Automation Test (Cucumber, Robot Framework)',
+  'Linux + Shell script'
   'Android development',
+  'New bie in Machine Learning',
 ];
 
 ReactDOM.render(
@@ -70,10 +69,12 @@ ReactDOM.render(
         <ul class="list-inline social-links">
           <li><a target="_blank" href="https://github.com/duynguyenhoang" class="btn-social btn-outline" data-toggle="tooltip" data-placement="top" title="Github"><i class="icon ion-social-github"></i></a>
           </li>
-          
           <li><a target="_blank" href="https://linkedin.com/in/duynguyenhoang" class="btn-social btn-outline" title="LinkedIn"><i class="icon ion-social-linkedin"></i></a>
           </li>
-          <li><a target="_blank" href="http://fb.com/nhduy88" class="btn-social btn-outline" title="Facebook"><i class="ion ion-social-facebook"></i></a>
+        </ul>
+        <ul class="list-inline">
+          <li>
+            <a target="_blank" href="https://medium.com/@nhduy88" class="" title="LinkedIn">https://medium.com/@nhduy88</a>
           </li>
         </ul>
       </div>
