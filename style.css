@@ -56,7 +56,6 @@
   p {
       margin-top: 5px;
       font-size: 14px;
-      color: rgba(101, 132, 124, .7);
   }
   .icon-plus {
       float: right;
@@ -226,4 +225,11 @@
           -webkit-transform: translateY(0);
           transform: translateY(0);
       }
+  }
+  .short-intro {
+      padding: 20px;
+      text-align: left;
+  }
+  .short-intro .item {
+    margin: 10px 0;
   }

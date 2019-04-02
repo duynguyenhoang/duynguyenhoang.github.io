@@ -1,0 +1,10 @@
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - index.md
+  - big_data.md
+  - full_stack.md
+  - infrastructure.md
