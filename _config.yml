@@ -8,3 +8,5 @@ include:
   - big_data.md
   - full_stack.md
   - infrastructure.md
+
+theme: jekyll-theme-cayman
